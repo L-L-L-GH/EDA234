@@ -1,0 +1,9 @@
+srcscan starts
+srcscan: Caught exception in shared_memory linking
+srcscan exits with return value -1
+(0xc0000005) at pc=0x00007ff8f4432db5, pid=12440, tid=15756
+#
+# JRE version: OpenJDK Runtime Environment Temurin-17.0.7+7 (17.0.7+7) (build 17.0.7+7)
+srcscan starts
+srcscan: Caught exception in shared_memory linking
+srcscan exits with return value -1

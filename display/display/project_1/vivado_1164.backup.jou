@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2023.2_AR000036028_AR000036028 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jan 14 17:33:33 2026
+# Process ID: 1164
+# Current directory: Z:/EDA234/display/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9288 Z:\EDA234\display\project_1\project_1.xpr
+# Log file: Z:/EDA234/display/project_1/vivado.log
+# Journal file: Z:/EDA234/display/project_1\vivado.jou
+# Running On: ED4220-06, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 34122 MB
+#-----------------------------------------------------------
+start_gui
+open_project Z:/EDA234/display/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+import_files -norecurse {C:/Users/liuv/Desktop/EDA234-master/EDA234-master/speakerv5/speakerv5.srcs/sources_1/new/PWM.vhd C:/Users/liuv/Desktop/EDA234-master/EDA234-master/speakerv5/speakerv5.srcs/sources_1/new/keyboard.vhd C:/Users/liuv/Desktop/EDA234-master/EDA234-master/speakerv5/speakerv5.srcs/sources_1/new/top.vhd}
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/liuv/Desktop/EDA234-master/EDA234-master/speakerv5/speakerv5.srcs/constrs_1/new/constraints.xdc
+import_files -fileset constrs_1 C:/Users/liuv/Desktop/EDA234-master/EDA234-master/speakerv5/speakerv5.srcs/constrs_1/new/constraints.xdc
+export_ip_user_files -of_objects  [get_files Z:/EDA234/display/project_1/project_1.srcs/constrs_1/imports/new/constraints.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 Z:/EDA234/display/project_1/project_1.srcs/constrs_1/imports/new/constraints.xdc
+file delete -force Z:/EDA234/display/project_1/project_1.srcs/constrs_1/imports/new/constraints.xdc
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name rom_date
+set_property -dict [list \
+  CONFIG.Coe_File {Z:/EDA234/display/voice record/date_voice.coe} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Write_Depth_A {38600} \
+  CONFIG.Write_Width_A {8} \
+] [get_ips rom_date]
+generate_target {instantiation_template} [get_files z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_date/rom_date.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_date/rom_date.xci]
+catch { config_ip_cache -export [get_ips -all rom_date] }
+export_ip_user_files -of_objects [get_files z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_date/rom_date.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_date/rom_date.xci] -directory Z:/EDA234/display/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir Z:/EDA234/display/project_1/project_1.ip_user_files -ipstatic_source_dir Z:/EDA234/display/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=Z:/EDA234/display/project_1/project_1.cache/compile_simlib/modelsim} {questa=Z:/EDA234/display/project_1/project_1.cache/compile_simlib/questa} {riviera=Z:/EDA234/display/project_1/project_1.cache/compile_simlib/riviera} {activehdl=Z:/EDA234/display/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name rom_temp
+set_property -dict [list \
+  CONFIG.Coe_File {Z:/EDA234/display/voice record/temp_voice.coe} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Write_Depth_A {38600} \
+  CONFIG.Write_Width_A {8} \
+] [get_ips rom_temp]
+generate_target {instantiation_template} [get_files z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_temp/rom_temp.xci]
+generate_target all [get_files  z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_temp/rom_temp.xci]
+catch { config_ip_cache -export [get_ips -all rom_temp] }
+export_ip_user_files -of_objects [get_files z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_temp/rom_temp.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_temp/rom_temp.xci]
+launch_runs rom_temp_synth_1 -jobs 12
+wait_on_run rom_temp_synth_1
+export_simulation -of_objects [get_files z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_temp/rom_temp.xci] -directory Z:/EDA234/display/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir Z:/EDA234/display/project_1/project_1.ip_user_files -ipstatic_source_dir Z:/EDA234/display/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=Z:/EDA234/display/project_1/project_1.cache/compile_simlib/modelsim} {questa=Z:/EDA234/display/project_1/project_1.cache/compile_simlib/questa} {riviera=Z:/EDA234/display/project_1/project_1.cache/compile_simlib/riviera} {activehdl=Z:/EDA234/display/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name rom_time
+set_property -dict [list \
+  CONFIG.Coe_File {Z:/EDA234/display/voice record/time_voice.coe} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Load_Init_File {true} \
+  CONFIG.Memory_Type {Single_Port_ROM} \
+  CONFIG.Write_Depth_A {42000} \
+  CONFIG.Write_Width_A {8} \
+] [get_ips rom_time]
+generate_target {instantiation_template} [get_files z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_time/rom_time.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_time/rom_time.xci]
+catch { config_ip_cache -export [get_ips -all rom_time] }
+export_ip_user_files -of_objects [get_files z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_time/rom_time.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files z:/EDA234/display/project_1/project_1.srcs/sources_1/ip/rom_time/rom_time.xci] -directory Z:/EDA234/display/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir Z:/EDA234/display/project_1/project_1.ip_user_files -ipstatic_source_dir Z:/EDA234/display/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=Z:/EDA234/display/project_1/project_1.cache/compile_simlib/modelsim} {questa=Z:/EDA234/display/project_1/project_1.cache/compile_simlib/questa} {riviera=Z:/EDA234/display/project_1/project_1.cache/compile_simlib/riviera} {activehdl=Z:/EDA234/display/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1

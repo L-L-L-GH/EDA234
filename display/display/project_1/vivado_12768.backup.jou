@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2023.2_AR000036028_AR000036028 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jan 14 17:28:43 2026
+# Process ID: 12768
+# Current directory: Z:/EDA234/display/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18084 Z:\EDA234\display\project_1\project_1.xpr
+# Log file: Z:/EDA234/display/project_1/vivado.log
+# Journal file: Z:/EDA234/display/project_1\vivado.jou
+# Running On: ED4220-06, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 34122 MB
+#-----------------------------------------------------------
+start_gui
+open_project Z:/EDA234/display/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/liuv/Desktop/EDA234-master/EDA234-master/speakerv5/speakerv5.xpr
+open_project C:/Users/liuv/Desktop/EDA234-master/EDA234-master/speakerv5/speakerv5.xpr

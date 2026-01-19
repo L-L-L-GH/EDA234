@@ -1,0 +1,586 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Jan 18 18:24:20 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 48392
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1167.652 ; gain = 470.500
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-9871] overwriting existing primary unit 'twictl' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'top' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/top.vhdl:42]
+INFO: [Synth 8-638] synthesizing module 'TempSensorCtl' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/temponboard2asciii/TempSensorCtl.vhd:59]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'u_ila_0' of component 'ila_0' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/temponboard2asciii/TempSensorCtl.vhd:168]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'TWICtl' declared at 'D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:68' bound to instance 'Inst_TWICtl' of component 'TWICtl' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/temponboard2asciii/TempSensorCtl.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'TWICtl' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:132]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:357]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:375]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:393]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:411]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:429]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:447]
+WARNING: [Synth 8-614] signal 'timeOutCnt' is read in the process but is not in the sensitivity list [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:500]
+INFO: [Synth 8-256] done synthesizing module 'TWICtl' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:132]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/temponboard2asciii/TempSensorCtl.vhd:341]
+WARNING: [Synth 8-614] signal 'initA' is read in the process but is not in the sensitivity list [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/temponboard2asciii/TempSensorCtl.vhd:336]
+INFO: [Synth 8-256] done synthesizing module 'TempSensorCtl' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/temponboard2asciii/TempSensorCtl.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'TempConversion' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/tempconv.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'TempConversion' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/tempconv.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'reset_sync' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/reset_sync.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'reset_sync' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/reset_sync.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'debounce_pulse' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/debounce_pulse.vhd:20]
+	Parameter DEBOUNCE_CYCLES bound to: 2000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debounce_pulse' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/debounce_pulse.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'keypad_frontend' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/keypad_frontend.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'keyboard_scanner' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/new/keyboard.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_scanner' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/new/keyboard.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'keypad_frontend' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/keypad_frontend.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'mode_ctrl' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/mode_ctrl.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'mode_ctrl' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/mode_ctrl.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'sqw_sync' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/sqw_sync.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'sqw_sync' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/sqw_sync.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'rtc_subsystem' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/rtc_subsystem.vhd:51]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/rtc_subsystem.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'DS1307Ctl' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/DS1307Ctl.vhdl:56]
+	Parameter CLOCKFREQ_MHZ bound to: 100 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'TWICtl__parameterized0' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:132]
+	Parameter CLOCKFREQ bound to: 100 - type: integer 
+	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 0 - type: bool 
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:357]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:375]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:393]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:411]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:429]
+INFO: [Synth 8-226] default block is never used [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:447]
+INFO: [Synth 8-256] done synthesizing module 'TWICtl__parameterized0' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'DS1307Ctl' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/DS1307Ctl.vhdl:56]
+INFO: [Synth 8-256] done synthesizing module 'rtc_subsystem' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/rtc_subsystem.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'led_hold' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/led_hold.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'led_hold' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/led_hold.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'clock_7seg_mux' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/clock_7seg_mux.vhd:27]
+WARNING: [Synth 8-614] signal 'y_i' is read in the process but is not in the sensitivity list [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/clock_7seg_mux.vhd:90]
+WARNING: [Synth 8-614] signal 'mo_i' is read in the process but is not in the sensitivity list [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/clock_7seg_mux.vhd:90]
+WARNING: [Synth 8-614] signal 'd_i' is read in the process but is not in the sensitivity list [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/clock_7seg_mux.vhd:90]
+WARNING: [Synth 8-614] signal 'h_i' is read in the process but is not in the sensitivity list [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/clock_7seg_mux.vhd:90]
+WARNING: [Synth 8-614] signal 'mi_i' is read in the process but is not in the sensitivity list [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/clock_7seg_mux.vhd:90]
+WARNING: [Synth 8-614] signal 's_i' is read in the process but is not in the sensitivity list [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/clock_7seg_mux.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'clock_7seg_mux' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/clock_7seg_mux.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'lcd_subsystem' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/lcd_subsystem.vhd:31]
+INFO: [Synth 8-3491] module 'lcd_text_ram' declared at 'D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/lcd_text_ram/lcd_text_ram.vhdl:8' bound to instance 'inst_ram' of component 'lcd_text_ram' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/lcd_subsystem.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'lcd_text_ram' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/lcd_text_ram/lcd_text_ram.vhdl:18]
+INFO: [Synth 8-256] done synthesizing module 'lcd_text_ram' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/lcd_text_ram/lcd_text_ram.vhdl:18]
+	Parameter SIMULATION_MODE bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'lcd_controller' declared at 'D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/LCD_control.vhdl:9' bound to instance 'inst_controller' of component 'lcd_controller' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/lcd_subsystem.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'lcd_controller' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/LCD_control.vhdl:26]
+	Parameter SIMULATION_MODE bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'lcd_controller' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/LCD_control.vhdl:26]
+INFO: [Synth 8-256] done synthesizing module 'lcd_subsystem' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/lcd_subsystem.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'voice_subsystem' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/voice_subsystem.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'rom_temp' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.runs/synth_1/.Xil/Vivado-51092-LAPTOP-QE4DJ8SO/realtime/rom_temp_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'rom_date' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.runs/synth_1/.Xil/Vivado-51092-LAPTOP-QE4DJ8SO/realtime/rom_date_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'rom_time' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.runs/synth_1/.Xil/Vivado-51092-LAPTOP-QE4DJ8SO/realtime/rom_time_stub.vhdl:21]
+INFO: [Synth 8-638] synthesizing module 'pwm_driver' [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/new/PWM.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'pwm_driver' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/new/PWM.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'voice_subsystem' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/voice_subsystem.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/top.vhdl:42]
+WARNING: [Synth 8-6014] Unused sequential element errTypeR_reg was removed.  [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:335]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sync_scl_reg' and it is trimmed from '3' to '2' bits. [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:172]
+WARNING: [Synth 8-3848] Net ERRTYPE_O in module/entity TWICtl does not have driver. [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:121]
+WARNING: [Synth 8-6014] Unused sequential element errTypeR_reg was removed.  [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:335]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sync_scl_reg' and it is trimmed from '3' to '2' bits. [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:172]
+WARNING: [Synth 8-3848] Net ERRTYPE_O in module/entity TWICtl__parameterized0 does not have driver. [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd:121]
+WARNING: [Synth 8-6014] Unused sequential element key_val_lat_reg was removed.  [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/new/voice_subsystem.vhd:93]
+WARNING: [Synth 8-7129] Port year[7] in module clock_7seg_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port month[7] in module clock_7seg_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port date[7] in module clock_7seg_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hour[7] in module clock_7seg_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port min[7] in module clock_7seg_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sec[7] in module clock_7seg_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ERRTYPE_O in module TWICtl__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ERRTYPE_O in module TWICtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1309.094 ; gain = 611.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1309.094 ; gain = 611.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1309.094 ; gain = 611.941
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1309.094 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.gen/sources_1/ip/rom_date/rom_date/rom_date_in_context.xdc] for cell 'u_voice/ROM_DATE_INST'
+Finished Parsing XDC File [d:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.gen/sources_1/ip/rom_date/rom_date/rom_date_in_context.xdc] for cell 'u_voice/ROM_DATE_INST'
+Parsing XDC File [d:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.gen/sources_1/ip/rom_temp/rom_temp/rom_temp_in_context.xdc] for cell 'u_voice/ROM_TEMP_INST'
+Finished Parsing XDC File [d:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.gen/sources_1/ip/rom_temp/rom_temp/rom_temp_in_context.xdc] for cell 'u_voice/ROM_TEMP_INST'
+Parsing XDC File [d:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.gen/sources_1/ip/rom_time/rom_time/rom_time_in_context.xdc] for cell 'u_voice/ROM_TIME_INST'
+Finished Parsing XDC File [d:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.gen/sources_1/ip/rom_time/rom_time/rom_time_in_context.xdc] for cell 'u_voice/ROM_TIME_INST'
+Parsing XDC File [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc:79]
+Finished Parsing XDC File [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1375.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1375.672 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_voice/ROM_DATE_INST' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_voice/ROM_TEMP_INST' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_voice/ROM_TIME_INST' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1378.461 ; gain = 681.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1378.461 ; gain = 681.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_voice/ROM_DATE_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_voice/ROM_TEMP_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_voice/ROM_TIME_INST. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1378.461 ; gain = 681.309
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWICtl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWICtl__parameterized0'
+WARNING: [Synth 8-3936] Found unconnected internal register 'rbuf_reg[3]' and it is trimmed from '8' to '3' bits. [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/DS1307Ctl.vhdl:340]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rbuf_reg[2]' and it is trimmed from '8' to '6' bits. [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/DS1307Ctl.vhdl:340]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rbuf_reg[0]' and it is trimmed from '8' to '7' bits. [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/DS1307Ctl.vhdl:340]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_dow_reg' and it is trimmed from '8' to '3' bits. [D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.srcs/sources_1/imports/RTC/DS1307Ctl.vhdl:275]
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'DS1307Ctl'
+INFO: [Synth 8-802] inferred FSM for state register 'tstate_reg' in module 'rtc_subsystem'
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'lcd_controller'
+INFO: [Synth 8-802] inferred FSM for state register 'lw_state_reg' in module 'lcd_subsystem'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                             0001 |                             0000
+                 ststart |                             1100 |                             0001
+                 stwrite |                             0000 |                             0011
+                  stsack |                             0010 |                             0110
+                  stread |                             0110 |                             0010
+            stmnackstart |                             0111 |                             1001
+                  stmack |                             0101 |                             0111
+             stmnackstop |                             0100 |                             1000
+                  ststop |                             0011 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'gray' in module 'TWICtl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                             0001 |                             0000
+                 ststart |                             1100 |                             0001
+                 stwrite |                             0000 |                             0011
+                  stsack |                             0010 |                             0110
+                  stread |                             0110 |                             0010
+            stmnackstart |                             0111 |                             1001
+                  stmack |                             0101 |                             0111
+             stmnackstop |                             0100 |                             1000
+                  ststop |                             0011 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'gray' in module 'TWICtl__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                   00000000000001 |                             0000
+              s_wait_bus |                   00000000000010 |                             0001
+              s_ptr_fire |                   00000000000100 |                             0010
+              s_ptr_wait |                   00000000001000 |                             0011
+        s_r_restart_fire |                   00000000010000 |                             0100
+        s_r_restart_wait |                   00000000100000 |                             0101
+           s_r_cont_fire |                   00000001000000 |                             0110
+           s_r_cont_wait |                   00000010000000 |                             0111
+           s_w_data_fire |                   00000100000000 |                             1000
+           s_w_data_wait |                   00001000000000 |                             1001
+           s_c_data_fire |                   00010000000000 |                             1010
+           s_c_data_wait |                   00100000000000 |                             1011
+                   s_err |                   01000000000000 |                             1101
+                  s_done |                   10000000000000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'one-hot' in module 'DS1307Ctl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  t_init |                               00 |                               00
+                 t_issue |                               01 |                               10
+                  t_wait |                               10 |                               11
+                  t_idle |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tstate_reg' using encoding 'sequential' in module 'rtc_subsystem'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  w_idle |                              000 |                              000
+              w_setup_hi |                              001 |                              001
+                  w_e_hi |                              010 |                              010
+                  w_e_lo |                              011 |                              011
+              w_setup_lo |                              100 |                              100
+                 w_e2_hi |                              101 |                              101
+                 w_e2_lo |                              110 |                              110
+                  w_done |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'sequential' in module 'lcd_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 lw_idle |                              000 |                              000
+            lw_calc_init |                              001 |                              001
+             lw_calc_100 |                              010 |                              010
+              lw_calc_10 |                              011 |                              011
+           lw_write_0_15 |                              100 |                              100
+           lw_fill_16_31 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'lw_state_reg' using encoding 'sequential' in module 'lcd_subsystem'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1378.461 ; gain = 681.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input   17 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 8     
+	                8 Bit    Registers := 30    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 62    
++---RAMs : 
+	              256 Bit	(32 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 13    
+	   3 Input   32 Bit        Muxes := 2     
+	   8 Input   32 Bit        Muxes := 1     
+	   4 Input   17 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 2     
+	  14 Input   14 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 7     
+	   3 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   6 Input   13 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 13    
+	   8 Input    8 Bit        Muxes := 3     
+	  14 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 7     
+	   6 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	  21 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   3 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 2     
+	   9 Input    4 Bit        Muxes := 2     
+	  27 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 5     
+	  26 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 3     
+	   8 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 9     
+	  14 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 5     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 79    
+	   4 Input    1 Bit        Muxes := 44    
+	   8 Input    1 Bit        Muxes := 14    
+	   3 Input    1 Bit        Muxes := 9     
+	   9 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 19    
+	  21 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 8     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port year[7] in module clock_7seg_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port month[7] in module clock_7seg_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port date[7] in module clock_7seg_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hour[7] in module clock_7seg_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port min[7] in module clock_7seg_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sec[7] in module clock_7seg_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ERRTYPE_O in module TWICtl__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port set_dow[7] in module DS1307Ctl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port set_dow[6] in module DS1307Ctl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port set_dow[5] in module DS1307Ctl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port set_dow[4] in module DS1307Ctl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port set_dow[3] in module DS1307Ctl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1590.340 ; gain = 893.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|lcd_controller | next_state | 32x5          | LUT            | 
+|lcd_controller | write_req  | 32x1          | LUT            | 
+|lcd_controller | rs_reg     | 32x1          | LUT            | 
+|DS1307Ctl      | b          | 64x7          | LUT            | 
+|DS1307Ctl      | b          | 32x6          | LUT            | 
+|DS1307Ctl      | b          | 64x7          | LUT            | 
+|DS1307Ctl      | b          | 32x6          | LUT            | 
+|DS1307Ctl      | b          | 128x8         | LUT            | 
+|lcd_controller | next_state | 32x5          | LUT            | 
+|lcd_controller | rs_reg     | 32x1          | LUT            | 
++---------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives  | 
++------------+------------------+-----------+----------------------+-------------+
+|u_lcd       | inst_ram/ram_reg | Implied   | 32 x 8               | RAM32M x 2  | 
++------------+------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1590.340 ; gain = 893.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1599.574 ; gain = 902.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives  | 
++------------+------------------+-----------+----------------------+-------------+
+|u_lcd       | inst_ram/ram_reg | Implied   | 32 x 8               | RAM32M x 2  | 
++------------+------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1610.059 ; gain = 912.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4649] Removing BlackBox instance \Inst_TempSensorCtl/u_ila_0  of module ila_0_bbox_0 having unconnected or no output ports
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1744.633 ; gain = 1047.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1744.633 ; gain = 1047.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1744.633 ; gain = 1047.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1744.633 ; gain = 1047.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1744.633 ; gain = 1047.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1744.633 ; gain = 1047.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |rom_temp      |         1|
+|2     |rom_date      |         1|
+|3     |rom_time      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |rom_date |     1|
+|2     |rom_temp |     1|
+|3     |rom_time |     1|
+|4     |BUFG     |     1|
+|5     |CARRY4   |   119|
+|6     |LUT1     |   148|
+|7     |LUT2     |   249|
+|8     |LUT3     |   128|
+|9     |LUT4     |   174|
+|10    |LUT5     |   216|
+|11    |LUT6     |   329|
+|12    |MUXF7    |     5|
+|13    |RAM32M   |     1|
+|14    |RAM32X1D |     2|
+|15    |FDCE     |   106|
+|16    |FDPE     |     2|
+|17    |FDRE     |   641|
+|18    |FDSE     |    47|
+|19    |IBUF     |    19|
+|20    |IOBUF    |     4|
+|21    |OBUF     |    33|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1744.633 ; gain = 1047.480
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1744.633 ; gain = 978.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1744.633 ; gain = 1047.480
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1753.844 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1757.465 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+Synth Design complete | Checksum: 357098b0
+INFO: [Common 17-83] Releasing license: Synthesis
+95 Infos, 56 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 1757.465 ; gain = 1262.605
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1757.465 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/EDA234_indoor_final/display/display/project_1/project_1.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 18 18:25:14 2026...

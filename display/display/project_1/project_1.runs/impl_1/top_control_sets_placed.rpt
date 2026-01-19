@@ -1,0 +1,131 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun Jan 18 18:25:55 2026
+| Host         : LAPTOP-QE4DJ8SO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    53 |
+|    Minimum number of control sets                        |    53 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   159 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    53 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |    11 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |    12 |
+| >= 10 to < 12      |     5 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             195 |           80 |
+| No           | No                    | Yes                    |               7 |            4 |
+| No           | Yes                   | No                     |             141 |           53 |
+| Yes          | No                    | No                     |             109 |           38 |
+| Yes          | No                    | Yes                    |             101 |           32 |
+| Yes          | Yes                   | No                     |             304 |          103 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+----------------------------------------------------------+---------------------------------------------------------+------------------+----------------+--------------+
+|     Clock Signal     |                       Enable Signal                      |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+----------------------------------------------------------+---------------------------------------------------------+------------------+----------------+--------------+
+|  CLK100MHZ_IBUF_BUFG | u_lcd/inst_controller/e_reg                              | u_rst/srst                                              |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | u_led/led_err_hold_i_1_n_0                               | u_rst/srst                                              |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | u_led/led_done_hold_i_1_n_0                              | u_rst/srst                                              |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/val_t_frac[3]_i_1_n_0                              | u_rst/srst                                              |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/val_t_unit[3]_i_1_n_0                              | u_rst/srst                                              |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_kp/u_kb/key_val[3]_i_1_n_0                             |                                                         |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | Inst_TempSensorCtl/retryCnt[3]_i_2_n_0                   | Inst_TempSensorCtl/retryCnt[3]_i_1_n_0                  |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/u_twi/FSM_gray_state[3]_i_1__0_n_0           |                                                         |                3 |              4 |         1.33 |
+|  CLK100MHZ_IBUF_BUFG | u_kp/u_kb/p_0_in                                         |                                                         |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | Inst_TempSensorCtl/Inst_TWICtl/FSM_gray_state[3]_i_1_n_0 |                                                         |                3 |              4 |         1.33 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/inst_controller/data_reg                           | u_rst/srst                                              |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/val_t_ten[3]_i_1_n_0                               | u_rst/srst                                              |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/lw_idx                                             | u_rst/srst                                              |                2 |              5 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/inst_controller/state                              | u_rst/srst                                              |                2 |              5 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/stb_cnt[8]_i_1_n_0                           | u_rst/srst                                              |                2 |              6 |         3.00 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/inst_controller/addr_ptr[5]_i_1_n_0                | u_rst/srst                                              |                2 |              6 |         3.00 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/u_twi/idx_reg[0][0]                          |                                                         |                2 |              6 |         3.00 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/u_twi/FSM_onehot_st_reg[5][0]                |                                                         |                2 |              7 |         3.50 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/u_twi/idx_reg[2][0]                          |                                                         |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/inst_controller/char_buf[7]_i_1_n_0                | u_rst/srst                                              |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | Inst_TempSensorCtl/Inst_TWICtl/ERR_O_reg_2               |                                                         |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/u_twi/dataByte[7]_i_1__0_n_0                 |                                                         |                4 |              8 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/u_twi/idx_reg[0]_0[0]                        |                                                         |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/u_twi/idx_reg[2]_1[0]                        |                                                         |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/u_twi/idx_reg[2]_0[0]                        |                                                         |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_led/err_hold_cnt[24]_i_1_n_0                           | u_rst/srst                                              |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | Inst_TempSensorCtl/Inst_TWICtl/dataByte[7]_i_1_n_0       |                                                         |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_led/done_hold_cnt[24]_i_1_n_0                          | u_rst/srst                                              |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/stb_fire_i_1_n_0                             | u_rst/srst                                              |                4 |              9 |         2.25 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/sel                                          | u_rst/SR[0]                                             |                2 |              9 |         4.50 |
+|  CLK100MHZ_IBUF_BUFG |                                                          | u_rtc/u_rtc/u_twi/busFreeCnt0_0                         |                3 |             10 |         3.33 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/u_twi/sclCnt[9]_i_2__0_n_0                   | u_rtc/u_rtc/u_twi/sclCnt[9]_i_1__0_n_0                  |                4 |             10 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG | Inst_TempSensorCtl/Inst_TWICtl/sclCnt[9]_i_2_n_0         | Inst_TempSensorCtl/Inst_TWICtl/sclCnt0_0                |                2 |             10 |         5.00 |
+|  CLK100MHZ_IBUF_BUFG |                                                          | Inst_TempSensorCtl/Inst_TWICtl/busFreeCnt[9]_i_1__0_n_0 |                3 |             10 |         3.33 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/l_sec                                        |                                                         |                4 |             11 |         2.75 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/ram_wdata[6]_i_1_n_0                               | u_rst/srst                                              |                5 |             12 |         2.40 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/inst_controller/g0_b0__1_n_0                       | u_rst/srst                                              |                4 |             13 |         3.25 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/t_run                                              | u_rst/srst                                              |                4 |             13 |         3.25 |
+|  CLK100MHZ_IBUF_BUFG | Inst_TempSensorCtl/Inst_TWICtl/E[0]                      |                                                         |                3 |             13 |         4.33 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/u_twi/E[0]                                   | u_rst/srst                                              |                4 |             14 |         3.50 |
+|  CLK100MHZ_IBUF_BUFG |                                                          | u_rst/r2_reg_1                                          |                4 |             14 |         3.50 |
+|  CLK100MHZ_IBUF_BUFG |                                                          | Inst_TempSensorCtl/clear                                |                5 |             17 |         3.40 |
+|  CLK100MHZ_IBUF_BUFG | u_voice/sample_en_reg_n_0                                | u_voice/addr_cnt[16]_i_1_n_0                            |                5 |             17 |         3.40 |
+|  CLK100MHZ_IBUF_BUFG |                                                          | Inst_TempSensorCtl/Inst_TWICtl/timeOutCnt0              |                5 |             20 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_btnd/cnt[0]_i_2_n_0                                    | u_btnd/cnt[0]_i_1_n_0                                   |                6 |             21 |         3.50 |
+|  CLK100MHZ_IBUF_BUFG | u_led/err_hold_cnt[31]_i_2_n_0                           | u_rst/r2_reg_0[0]                                       |                8 |             24 |         3.00 |
+|  CLK100MHZ_IBUF_BUFG | u_led/done_hold_cnt[31]_i_2_n_0                          | u_rtc/u_rtc/SR[0]                                       |                8 |             24 |         3.00 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/inst_controller/main_delay_cnt[31]_i_1_n_0         | u_rst/srst                                              |               10 |             32 |         3.20 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/inst_controller/write_delay_cnt                    | u_rst/srst                                              |               10 |             32 |         3.20 |
+|  CLK100MHZ_IBUF_BUFG | u_rtc/u_rtc/rd_sec[7]_i_1_n_0                            | u_rst/srst                                              |               15 |             40 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | u_lcd/cap_year                                           | u_rst/srst                                              |               21 |             56 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG |                                                          | u_rst/srst                                              |               37 |             77 |         2.08 |
+|  CLK100MHZ_IBUF_BUFG |                                                          |                                                         |               80 |            207 |         2.59 |
++----------------------+----------------------------------------------------------+---------------------------------------------------------+------------------+----------------+--------------+
+
+

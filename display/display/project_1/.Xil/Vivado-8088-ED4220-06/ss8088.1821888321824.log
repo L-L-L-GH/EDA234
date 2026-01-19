@@ -1,0 +1,86 @@
+srcscan starts
+=============== Using vdb files for VHDL std libs ===========
+INFO: VHDL library search path for library "std" is now "C:/Xilinx/Vivado/2023.2/data/precomp_hsv/vhdl/std" (VHDL-1505)
+INFO: VHDL library search path for library "synopsys" is now "C:/Xilinx/Vivado/2023.2/data/precomp_hsv/vhdl/synopsys" (VHDL-1505)
+INFO: VHDL library search path for library "ieee" is now "C:/Xilinx/Vivado/2023.2/data/precomp_hsv/vhdl/ieee" (VHDL-1505)
+INFO: VHDL library search path for library "unimacro" is now "C:/Xilinx/Vivado/2023.2/data/precomp_hsv/vhdl/unimacro" (VHDL-1505)
+INFO: VHDL library search path for library "unisim" is now "C:/Xilinx/Vivado/2023.2/data/precomp_hsv/vhdl/unisim" (VHDL-1505)
+INFO: VHDL library search path for library "vl" is now "C:/Xilinx/Vivado/2023.2/data/precomp_hsv/vhdl/vl" (VHDL-1505)
+INFO: VHDL library search path for library "xpm" is now "C:/Xilinx/Vivado/2023.2/data/precomp_hsv/vhdl/xpm" (VHDL-1505)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing package 'TWIUtils'
+
+INFO: analyzing package body 'TWIUtils'
+
+INFO: analyzing entity 'TWICtl' (VHDL-1012)
+INFO: analyzing architecture 'Behavioral' of entity 'twictl' (VHDL-9006)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/RTC/DS1307Ctl.vhdl" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'DS1307Ctl' (VHDL-1012)
+INFO: analyzing architecture 'rtl' of entity 'ds1307ctl' (VHDL-9006)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/LCD_control.vhdl" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'lcd_controller' (VHDL-1012)
+INFO: analyzing architecture 'Behavioral' of entity 'lcd_controller' (VHDL-9006)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/new/PWM.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'pwm_driver' (VHDL-1012)
+INFO: analyzing architecture 'Behavioral' of entity 'pwm_driver' (VHDL-9006)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/RTC/clock_7seg_mux.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'clock_7seg_mux' (VHDL-1012)
+INFO: analyzing architecture 'rtl' of entity 'clock_7seg_mux' (VHDL-9006)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/debounce_pulse.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'debounce_pulse' (VHDL-1012)
+INFO: analyzing architecture 'rtl' of entity 'debounce_pulse' (VHDL-9006)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/new/keyboard.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'keyboard_scanner' (VHDL-1012)
+INFO: analyzing architecture 'Behavioral' of entity 'keyboard_scanner' (VHDL-9006)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/keypad_frontend.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'keypad_frontend' (VHDL-1012)
+INFO: analyzing architecture 'rtl' of entity 'keypad_frontend' (VHDL-9006)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/lcd_subsystem.vhd" into library xil_defaultlib (VHDL-9003)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/lcd_text_ram/lcd_text_ram.vhdl" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'lcd_text_ram' (VHDL-1012)
+INFO: analyzing architecture 'Behavioral' of entity 'lcd_text_ram' (VHDL-9006)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/mode_ctrl.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'mode_ctrl' (VHDL-1012)
+INFO: analyzing architecture 'rtl' of entity 'mode_ctrl' (VHDL-9006)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/reset_sync.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'reset_sync' (VHDL-1012)
+INFO: analyzing architecture 'rtl' of entity 'reset_sync' (VHDL-9006)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/rtc_subsystem.vhd" into library xil_defaultlib (VHDL-9003)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/sqw_sync.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'sqw_sync' (VHDL-1012)
+INFO: analyzing architecture 'Behavioral' of entity 'sqw_sync' (VHDL-9006)
+-- Analyzing VHDL file "Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/top.vhdl" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'top' (VHDL-1012)
+INFO: analyzing architecture 'rtl' of entity 'top' (VHDL-9006)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/top.vhdl(1049): ERROR: actual for formal port 'mode_date' is neither a static name nor a globally static expression (VHDL-1443)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/top.vhdl(1773): ERROR: 'rom_temp' is not compiled in library 'xil_defaultlib' (VHDL-1240)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/top.vhdl(1787): ERROR: 'rom_date' is not compiled in library 'xil_defaultlib' (VHDL-1240)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/top.vhdl(1801): ERROR: 'rom_time' is not compiled in library 'xil_defaultlib' (VHDL-1240)
+Listing tops:
+VHDLTop: library:xil_defaultlib entity:debounce_pulse arch:
+VHDLTop: library:xil_defaultlib entity:debounce_pulse arch:
+VHDLTop: library:xil_defaultlib entity:keypad_frontend arch:
+VHDLTop: library:xil_defaultlib entity:keypad_frontend arch:
+VHDLTop: library:xil_defaultlib entity:mode_ctrl arch:
+VHDLTop: library:xil_defaultlib entity:mode_ctrl arch:
+VHDLTop: library:xil_defaultlib entity:reset_sync arch:
+VHDLTop: library:xil_defaultlib entity:reset_sync arch:
+VHDLTop: library:xil_defaultlib entity:sqw_sync arch:
+VHDLTop: library:xil_defaultlib entity:sqw_sync arch:
+VHDLTop: library:xil_defaultlib entity:top arch:
+VHDLTop: library:xil_defaultlib entity:top arch:
+END of tops
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/debounce_pulse.vhd(9): INFO: processing 'debounce_pulse_default(rtl)' (VHDL-1067)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/keypad_frontend.vhd(9): INFO: processing 'keypad_frontend_default(rtl)' (VHDL-1067)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/new/keyboard.vhd(5): INFO: processing 'keyboard_scanner_default(Behavioral)' (VHDL-1067)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/mode_ctrl.vhd(7): INFO: processing 'mode_ctrl_default(rtl)' (VHDL-1067)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/reset_sync.vhd(7): INFO: processing 'reset_sync_default(rtl)' (VHDL-1067)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/sqw_sync.vhd(34): INFO: processing 'sqw_sync_default(Behavioral)' (VHDL-1067)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/top.vhdl(13): INFO: processing 'top_default(rtl)' (VHDL-1067)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/RTC/DS1307Ctl.vhdl(7): INFO: processing 'DS1307Ctl_default(rtl)' (VHDL-1067)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/RTC/TWICtl.vhd(68): INFO: processing '\TWICtl(attempt_slave_unblock=false)\(Behavioral)' (VHDL-1067)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/RTC/clock_7seg_mux.vhd(5): INFO: processing 'clock_7seg_mux_default(rtl)' (VHDL-1067)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/lcd_text_ram/lcd_text_ram.vhdl(9): INFO: processing 'lcd_text_ram_default(Behavioral)' (VHDL-1067)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/EDA234/LCD-vivado/LCD_ram/LCD.srcs/sources_1/imports/LCD/LCD_control.vhdl(9): INFO: processing 'lcd_controller_default(Behavioral)' (VHDL-1067)
+Z:/EDA234/display/project_1/project_1.srcs/sources_1/imports/new/PWM.vhd(5): INFO: processing 'pwm_driver_default(Behavioral)' (VHDL-1067)
+srcscan exits with return value 0

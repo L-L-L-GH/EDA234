@@ -1,0 +1,277 @@
+#-----------------------------------------------------------
+# Vivado v2023.2_AR000036028_AR000036028 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Jan 15 16:37:28 2026
+# Process ID: 12440
+# Current directory: Z:/EDA234/display/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19212 Z:\EDA234\display\project_1\project_1.xpr
+# Log file: Z:/EDA234/display/project_1/vivado.log
+# Journal file: Z:/EDA234/display/project_1\vivado.jou
+# Running On: ED4220-06, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 34122 MB
+#-----------------------------------------------------------
+start_gui
+open_project Z:/EDA234/display/project_1/project_1.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 1551.027 ; gain = 392.422
+update_compile_order -fileset sources_1
+close [ open Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/led_hold.vhd w ]
+add_files Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/led_hold.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+close [ open Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/voice_subsystem.vhd w ]
+add_files Z:/EDA234/display/project_1/project_1.srcs/sources_1/new/voice_subsystem.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+update_compile_order -fileset sources_1
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\led_hold.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\reset_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\sqw_sync.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\mode_ctrl.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\rtc_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\debounce_pulse.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\new\lcd_subsystem.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [Z:\EDA234\display\project_1\project_1.srcs\sources_1\imports\EDA234\LCD-vivado\LCD_ram\LCD.srcs\sources_1\imports\LCD\top.vhdl:]
