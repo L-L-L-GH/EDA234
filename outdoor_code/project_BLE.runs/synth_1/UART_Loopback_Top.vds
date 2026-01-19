@@ -1,0 +1,398 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Jan 18 15:55:46 2026
+# Process ID         : 33960
+# Current directory  : D:/Downloads/project_BLE/project_BLE.runs/synth_1
+# Command line       : vivado.exe -log UART_Loopback_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source UART_Loopback_Top.tcl
+# Log file           : D:/Downloads/project_BLE/project_BLE.runs/synth_1/UART_Loopback_Top.vds
+# Journal file       : D:/Downloads/project_BLE/project_BLE.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-QE4DJ8SO
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 9 7945HX with Radeon Graphics        
+# CPU Frequency      : 2495 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 32
+# Host memory        : 34024 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36172 MB
+# Available Virtual  : 13836 MB
+#-----------------------------------------------------------
+source UART_Loopback_Top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Downloads/project_BLE/project_BLE.srcs/utils_1/imports/synth_1/BLE_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Downloads/project_BLE/project_BLE.srcs/utils_1/imports/synth_1/BLE_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top UART_Loopback_Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30812
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1158.004 ; gain = 470.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UART_Loopback_Top' [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/top_trigger.vhd:34]
+INFO: [Synth 8-3491] module 'ds18s20_onewire' declared at 'D:/Downloads/project_BLE/project_BLE.srcs/sources_1/imports/temp_DS18S20/temp_ds18s20.vhdl:10' bound to instance 'inst_ds18s20' of component 'ds18s20_onewire' [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/top_trigger.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'ds18s20_onewire' [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/imports/temp_DS18S20/temp_ds18s20.vhdl:22]
+INFO: [Synth 8-256] done synthesizing module 'ds18s20_onewire' (0#1) [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/imports/temp_DS18S20/temp_ds18s20.vhdl:22]
+INFO: [Synth 8-3491] module 'Temp_to_ASCII' declared at 'D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/temp2ASCII.vhd:13' bound to instance 'inst_temp_to_ascii' of component 'Temp_to_ASCII' [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/top_trigger.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'Temp_to_ASCII' [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/temp2ASCII.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'Temp_to_ASCII' (0#1) [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/temp2ASCII.vhd:29]
+	Parameter CLK_per_bit bound to: 10416 - type: integer 
+INFO: [Synth 8-3491] module 'UART_TX' declared at 'D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/UART_TX.vhd:9' bound to instance 'inst_uart_tx_BLE' of component 'UART_TX' [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/top_trigger.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'UART_TX' [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/UART_TX.vhd:25]
+	Parameter CLK_per_bit bound to: 10416 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/UART_TX.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'UART_TX' (0#1) [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/UART_TX.vhd:25]
+	Parameter CLK_per_bit bound to: 10416 - type: integer 
+INFO: [Synth 8-3491] module 'UART_RX' declared at 'D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/UART_RX.vhd:8' bound to instance 'inst_uart_rx_BLE' of component 'UART_RX' [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/top_trigger.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'UART_RX' [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/UART_RX.vhd:23]
+	Parameter CLK_per_bit bound to: 10416 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/UART_RX.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'UART_RX' (0#1) [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/UART_RX.vhd:23]
+	Parameter CLK_per_bit bound to: 10416 - type: integer 
+INFO: [Synth 8-3491] module 'UART_TX' declared at 'D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/UART_TX.vhd:9' bound to instance 'inst_uart_tx_PC' of component 'UART_TX' [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/top_trigger.vhd:240]
+INFO: [Synth 8-256] done synthesizing module 'UART_Loopback_Top' (0#1) [D:/Downloads/project_BLE/project_BLE.srcs/sources_1/new/top_trigger.vhd:34]
+WARNING: [Synth 8-7129] Port i_pc_rx in module UART_Loopback_Top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1268.395 ; gain = 581.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1268.395 ; gain = 581.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1268.395 ; gain = 581.336
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1268.395 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'o_led'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg(0)'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg(1)'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg(2)'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg(3)'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg(4)'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg(5)'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg(6)'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg(7)'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[2]'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[7]'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[8]'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[9]'. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Downloads/project_BLE/project_BLE.srcs/constrs_1/imports/lab1/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/UART_Loopback_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/UART_Loopback_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1344.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1344.215 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1344.215 ; gain = 657.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1344.215 ; gain = 657.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1344.215 ; gain = 657.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ds18s20_onewire'
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'UART_TX'
+INFO: [Synth 8-802] inferred FSM for state register 'current_cmd_state_reg' in module 'UART_Loopback_Top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                 reset_1 |                             0001 |                             0001
+         wait_presence_1 |                             0010 |                             0010
+        write_skip_rom_1 |                             0011 |                             0011
+         write_convert_t |                             0100 |                             0100
+         wait_conversion |                             0101 |                             0101
+                 reset_2 |                             0110 |                             0110
+         wait_presence_2 |                             0111 |                             0111
+        write_skip_rom_2 |                             1000 |                             1000
+   write_read_scratchpad |                             1001 |                             1001
+           read_temp_lsb |                             1010 |                             1010
+           read_temp_msb |                             1011 |                             1011
+                  finish |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ds18s20_onewire'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  wait_g |                               00 |                               00
+                  wait_o |                               01 |                               01
+                   armed |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_cmd_state_reg' using encoding 'sequential' in module 'UART_Loopback_Top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1344.215 ; gain = 657.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	  13 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input   14 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	  13 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	  13 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 9     
+	  13 Input    1 Bit        Muxes := 15    
+	   4 Input    1 Bit        Muxes := 22    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port i_pc_rx in module UART_Loopback_Top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1344.215 ; gain = 657.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1464.953 ; gain = 777.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1489.703 ; gain = 802.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1501.441 ; gain = 814.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1692.805 ; gain = 1005.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1692.805 ; gain = 1005.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1692.805 ; gain = 1005.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1692.805 ; gain = 1005.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1692.805 ; gain = 1005.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1692.805 ; gain = 1005.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    34|
+|3     |LUT1   |    22|
+|4     |LUT2   |    74|
+|5     |LUT3   |    60|
+|6     |LUT4   |    46|
+|7     |LUT5   |    37|
+|8     |LUT6   |   116|
+|9     |MUXF7  |     1|
+|10    |FDCE   |    54|
+|11    |FDPE   |     2|
+|12    |FDRE   |   149|
+|13    |IBUF   |     3|
+|14    |IOBUF  |     1|
+|15    |OBUF   |     2|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1692.805 ; gain = 1005.746
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1692.805 ; gain = 929.926
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1692.805 ; gain = 1005.746
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1692.805 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1692.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+Synth Design complete | Checksum: ff8df63d
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 24 Warnings, 21 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 1692.805 ; gain = 1207.945
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1692.805 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/project_BLE/project_BLE.runs/synth_1/UART_Loopback_Top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file UART_Loopback_Top_utilization_synth.rpt -pb UART_Loopback_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 18 15:56:34 2026...

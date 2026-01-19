@@ -1,0 +1,96 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun Jan 18 15:57:14 2026
+| Host         : LAPTOP-QE4DJ8SO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file UART_Loopback_Top_control_sets_placed.rpt
+| Design       : UART_Loopback_Top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    18 |
+|    Minimum number of control sets                        |    18 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    43 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    18 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              30 |           16 |
+| No           | No                    | Yes                    |              16 |            6 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              57 |           19 |
+| Yes          | No                    | Yes                    |              40 |           10 |
+| Yes          | Yes                   | No                     |              62 |           19 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+----------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|   Clock Signal   |                 Enable Signal                |              Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------+----------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|  i_clk_IBUF_BUFG | i_rst_n_IBUF                                 |                                           |                1 |              1 |         1.00 |
+|  i_clk_IBUF_BUFG | inst_ds18s20/FSM_sequential_state[3]_i_2_n_0 | inst_ds18s20/AR[0]                        |                2 |              4 |         2.00 |
+|  i_clk_IBUF_BUFG | inst_temp_to_ascii/current_state[3]_i_1_n_0  | inst_ds18s20/AR[0]                        |                1 |              4 |         4.00 |
+|  i_clk_IBUF_BUFG | inst_temp_to_ascii/next_state0               |                                           |                1 |              4 |         4.00 |
+|  i_clk_IBUF_BUFG | inst_uart_tx_BLE/r_tx_data                   | inst_ds18s20/AR[0]                        |                2 |              7 |         3.50 |
+|  i_clk_IBUF_BUFG | inst_temp_to_ascii/r_uart_data[6]_i_1_n_0    | inst_ds18s20/AR[0]                        |                3 |              7 |         2.33 |
+|  i_clk_IBUF_BUFG | inst_uart_tx_PC/r_tx_data                    | inst_ds18s20/AR[0]                        |                1 |              8 |         8.00 |
+|  i_clk_IBUF_BUFG | inst_ds18s20/temp_msb[7]_i_1_n_0             |                                           |                2 |              8 |         4.00 |
+|  i_clk_IBUF_BUFG | inst_ds18s20/temp_lsb[7]_i_1_n_0             |                                           |                4 |              8 |         2.00 |
+|  i_clk_IBUF_BUFG | inst_temp_to_ascii/digit_hundreds0           |                                           |                3 |             10 |         3.33 |
+|  i_clk_IBUF_BUFG | inst_temp_to_ascii/is_negative0              |                                           |                3 |             10 |         3.33 |
+|  i_clk_IBUF_BUFG | inst_uart_tx_BLE/clk_count0                  | inst_uart_tx_BLE/clk_count[13]_i_1__1_n_0 |                4 |             13 |         3.25 |
+|  i_clk_IBUF_BUFG | inst_uart_tx_PC/clk_count0                   | inst_uart_tx_PC/clk_count[13]_i_1__0_n_0  |                4 |             13 |         3.25 |
+|  i_clk_IBUF_BUFG | inst_uart_rx_BLE/clk_count[13]_i_1_n_0       | inst_ds18s20/AR[0]                        |                3 |             14 |         4.67 |
+|  i_clk_IBUF_BUFG |                                              | inst_ds18s20/AR[0]                        |                6 |             16 |         2.67 |
+|  i_clk_IBUF_BUFG | inst_ds18s20/temp_raw[15]_i_1_n_0            |                                           |                5 |             16 |         3.20 |
+|  i_clk_IBUF_BUFG |                                              |                                           |               16 |             30 |         1.88 |
+|  i_clk_IBUF_BUFG | inst_ds18s20/cnt                             | inst_ds18s20/AR[0]                        |                9 |             32 |         3.56 |
++------------------+----------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+
+
