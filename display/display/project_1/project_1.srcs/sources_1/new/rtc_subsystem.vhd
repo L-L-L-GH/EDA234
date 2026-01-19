@@ -18,26 +18,25 @@ entity rtc_subsystem is
     sqw_rise   : in  std_logic; -- Square wave rising edge
 
     -- Set inputs (binary)
-    set_sec   : in unsigned(7 downto 0); -- Set seconds
-    set_min   : in unsigned(7 downto 0); -- Set minutes
-    set_hour  : in unsigned(7 downto 0); -- Set hours
-    set_dow   : in unsigned(7 downto 0); -- Set day of week
-    set_date  : in unsigned(7 downto 0); -- Set date
-    set_month : in unsigned(7 downto 0); -- Set month
-    set_year  : in unsigned(7 downto 0); -- Set year
+    set_sec   : in unsigned(7 downto 0); 
+    set_min   : in unsigned(7 downto 0); 
+    set_hour  : in unsigned(7 downto 0); 
+    set_dow   : in unsigned(7 downto 0); 
+    set_date  : in unsigned(7 downto 0); 
+    set_month : in unsigned(7 downto 0); 
+    set_year  : in unsigned(7 downto 0); 
 
     -- I2C interface
-    I2C_SCL : inout std_logic; -- I2C clock line
-    I2C_SDA : inout std_logic; -- I2C data line
+    I2C_SCL : inout std_logic; 
+    I2C_SDA : inout std_logic; 
 
-    -- Outputs
-    rd_sec   : out unsigned(7 downto 0); -- Read seconds
-    rd_min   : out unsigned(7 downto 0); -- Read minutes
-    rd_hour  : out unsigned(7 downto 0); -- Read hours
-    rd_dow   : out unsigned(7 downto 0); -- Read day of week
-    rd_date  : out unsigned(7 downto 0); -- Read date
-    rd_month : out unsigned(7 downto 0); -- Read month
-    rd_year  : out unsigned(7 downto 0); -- Read year
+    rd_sec   : out unsigned(7 downto 0); 
+    rd_min   : out unsigned(7 downto 0); 
+    rd_hour  : out unsigned(7 downto 0); 
+    rd_dow   : out unsigned(7 downto 0); 
+    rd_date  : out unsigned(7 downto 0); 
+    rd_month : out unsigned(7 downto 0); 
+    rd_year  : out unsigned(7 downto 0); 
 
     busy  : out std_logic; -- Busy signal
     done  : out std_logic; -- Done signal
